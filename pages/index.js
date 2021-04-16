@@ -181,7 +181,7 @@ export function TextPreviewCombo(props) {
 		<div className="__combo">
 			<div className="__desc">
 				<h3>{props.type}</h3>
-				<p>{parseInt(results[props.type]) + form.units} // {ems}em</p>
+				<p>{parseInt(results[props.type]) + form.units} / {ems}em</p>
 			</div>
 			<p className={"__text --" + props.type} style={{ fontSize: results[props.type] + form.units, fontFamily: form.fontFamily }}>{form.previewText}</p>
 		</div>
