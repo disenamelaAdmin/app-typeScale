@@ -49,11 +49,11 @@ main {
 				text-overflow: ellipsis;
 				overflow: hidden;
 				white-space: nowrap;
-				line-height: .9em;
+				line-height: 1.1em;
 				text-align: left !important;
 				margin: 0;
 				align-self: center;
-				@apply transition-all duration-300;
+				@apply transition-all duration-300 text-gray-900 text-opacity-80;
 				&.--h1,
 				&.--h2,
 				&.--h3,
@@ -61,6 +61,7 @@ main {
 				&.--h5,
 				&.--h6 {
 					font-weight: bold;
+					letter-spacing: -.05em;
 				}
 			}
 
@@ -75,14 +76,15 @@ main {
 				flex-direction: row;
 				align-self: flex-end;
 				justify-content: flex-end;
-				@apply gap-2;
+				@apply gap-4;
 
 				h3 {
 					align-self: baseline;
 					margin: 0;
-					line-height: 1rem;
-					@apply text-base;
-					float: right;
+					line-height: 1.2rem;
+					font-weight: bold;
+					order: 5;
+					@apply text-base text-main-500 text-opacity-50 uppercase;
 				}
 
 				p {
